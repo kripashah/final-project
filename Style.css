@@ -3,98 +3,78 @@
     padding: 0;
     font-family: sans-serif;
 }
-.container{
+.banner{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(68, 52, 52, 0.7),rgba(68, 52, 52, 0.7)),url(You-do-not-need-to-go-down-the-classic-route-for-a-luxurious-dining-room.jpg);
+    background-image:linear-gradient(rgba(87, 86, 86, 0.75),rgba(87, 86, 86, 0.75)),url(Mid-Century-Modern-Kitchen.webp);
     background-position: center;
-    background-size: cover;
-    padding-left: 8%;
-    padding-right: 8%;
-    box-sizing: border-box;
 }
-.navba {
-    height: 12%;
+.navbar{
+    width: 60%;
+    margin: auto;
+    padding: 35px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .logo{
-    width: 50px;
+    width: 120px;
     cursor: pointer;
 }
-nav{
-    flex: 1;
-    text-align: right;
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: #268185;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin-left: 60px;
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    colour: #268185;
 }
-nav ul li a{
-    text-decoration: none;
-    color: #e7e4e4;
-    font-size: 13px;
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
 }
-.row{
-    display: flex;
-    height: 88%;
-    align-items: center;
-}
-.col{
-    flex-basis: 50%;   
-}
-h1{
-    color: #fff;
-    font-size: 100px;
-
-}
-p{
-    color: #fff;
-    font-size: 11px;
-    line-height: 15px;
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
 }
 button{
-   width: 100px;
-   color: #000;
-   font-size: 12px;
-   padding: 12px 0;
-   background: #fff;
-   border: 0;
-   border-radius: 20px;
-   outline: none;
-   margin-top: 30px; 
-}
-.card{
     width: 200px;
-    height: 230px;
-    display: inline-block;
-    border-radius: 10px;
-    padding: 15px 25px;
-    box-sizing: border-box;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #268185;
+    background: transparent;
+    color: #268185;
     cursor: pointer;
-    margin: 10px 15px;
-    background-position: center;
-    background-size: cover;
-    transition: transform 0.5s;
+    position: relative;
+    overflow: hidden;
 }
-.card1{
-    background-image: url(maxresdefault.jpg);
+span{
+    background: #268185;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
 }
-.card2{
-    background-image: url(cooked-food-1860208.jpg);
+button:hover span{
+    width: 100%;
 }
-.card3{
-    background-image: url(a56dd247-6f5b-4224-9361-5747254c7272.jpg);
+button:hover{
+    border: none;
 }
-.card4{
-    background-image: url(5d662c8ea84656a7661be92a_1566977166741.jpg);
-}
-.card:hover{
-    transform: translate(-10px);
-}
-h5{
-    colour: #fff;
-    text-shadow: 0 0 5px #999;
-}
-
