@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+  }
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .image-container a {
+    display: block;
+    border: none;
+    outline: none;
+    text-decoration: none;
+  }
+ 
+.image1 {
+    border: 5px solid #000;
+  }
+  
+  .image2 {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .image3 {
+    float: left;
+  }
+  
+  .image4 {
+    margin: 50px;
+}
+
+.text {
+  text-align: center;
+  margin-top: 20px;
+} 
